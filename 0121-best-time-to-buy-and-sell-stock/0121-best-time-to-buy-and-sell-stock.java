@@ -7,10 +7,10 @@ class Solution {
         int profit = 0;
         for(int i=1; i<prices.length; i++){
             if(prices[i] <=buying_price){
-                buying_price = prices[i];
+                buying_price = prices[i]; // finding lowest price
                 continue;
             }
-            profit = Math.max(profit, prices[i] - buying_price);
+            profit = Math.max(profit, prices[i] - buying_price); //finding maximum profit
         }
         return profit;
     }
