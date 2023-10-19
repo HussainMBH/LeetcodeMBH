@@ -7,7 +7,7 @@ class Solution {
         else if(n == 1){
             return true;
         }
-        else if(num%n ==0 && (n%10 == 4 || n%10 == 6)){
+        else if(num%n ==0 && (n%10 ==4 || n%10 ==6)){
             return true;
         }
         else{
